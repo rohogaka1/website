@@ -26,61 +26,7 @@
                 <img src="images/preloader.gif" alt="Seppo">
             </div>       
 
-            <header class="header-holder">             
-                <div class="menu-wrapper center-relative relative">             
-                    <div class="header-logo">
-                        <a href="index.html">
-                            <img src="images/logo.png" alt="Seppo">
-                        </a>               
-                    </div>
-
-                    <div class="toggle-holder">
-                        <div id="toggle">
-                            <div class="first-menu-line"></div>
-                            <div class="second-menu-line"></div>
-                            <div class="third-menu-line"></div>
-                        </div>
-                    </div>
-
-                    <div class="menu-holder">
-                        <nav id="header-main-menu">
-                            <ul class="main-menu sm sm-clean">
-                                <li>
-                                    <a href="#home">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#services">Services</a>
-                                </li>
-                                <li>
-                                    <a href="#about">About</a>
-                                </li>
-                                <li>
-                                    <a href="#clients">Clients</a>
-                                </li>
-                                <li>
-                                    <a href="#news">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="#portfolio">Portfolio</a>
-                                </li>
-                                                                <li>
-                                    <a href="#team">Team</a>
-                                </li>
-                                <li>
-                                    <a href="#skills">Skills</a>
-                                </li>
-                                <li>
-                                    <a href="#millstones">Milestones</a>
-                                </li>
-                                <li>
-                                    <a href="#contact">Contact</a>
-                                </li>
-                            </ul>
-                        </nav>                       
-                    </div>
-                    <div class="clear"></div>   
-                </div>
-            </header>                  
+                            
 
             <div id="content" class="site-content center-relative">        
 
@@ -326,56 +272,66 @@
 
 
                 <!-- Portfolio Section -->
-                <div id="portfolio" class="section no-padding">                   
+                <div id="portfolio" class="section no-padding">
                     <div class="page-title-holder">
                         <h3 class="entry-title">
                             PORTFOLIO                        
                         </h3>
                     </div>
-                    <div class="section-wrapper block content-1170 center-relative">                                                
+                    <div class="section-wrapper block content-1170 center-relative">
                         <div class="content-wrapper">
                             <div id="portfolio-wrapper">
                                 <div class="portfolio-load-content-holder"></div>
                                 <div class="grid" id="portfolio-grid">
                                     <div class="grid-sizer"></div>
-
-                                    <div id="p-item-1" class="grid-item element-item p_one_fourth">
-                                        <a class="item-link ajax-portfolio" href="portfolio-1.html" data-id="1" onclick="location.href='portfolio-1.html';"
->
-                                            <img src="images/portfolio_item_01.jpg" alt="" />
+                
+                                    <div id="p-item-1" class="hover-item grid-item element-item p_one_fourth">
+                                        <a class="item-link ajax-portfolio" href="portfolio-1.html" data-id="1">
+                                            <img src="images/virtue_poker.jpg" alt="Virtue Poker project image" />
                                             <div class="portfolio-text-holder">
                                                 <p class="portfolio-desc">Virtue Poker</p>
                                                 <p class="portfolio-title">24/7 Customer Support</p>
                                             </div>
                                         </a>
                                     </div>
-
-                                    <div id="p-item-2" class="grid-item element-item p_one_half">
-                                        <a class="item-link ajax-portfolio" href="portfolio-2.html" data-id="2" onclick="location.href='portfolio-2.html';"
->
-                                            <img src="images/portfolio_item_02.jpg" alt="" />
-                                            <div class="portfolio-text-holder">
-                                                <p class="portfolio-desc">Ola Finance</p>
-                                                <p class="portfolio-title">Ambassadors</p>
+                
+                                    <div id="p-item-2" class="grid-item p_one_half">
+                                        <!-- Nested Grid for Ola Finance -->
+                                        <div class="nested-grid">
+                                            <div id="p-item-2a" class="hover-item nested-grid-item top">
+                                                <a class="item-link ajax-portfolio" href="portfolio-2a.html" data-id="2a">
+                                                    <img src="images/fe_logo.jpg" alt="FE project image" />
+                                                    <div class="portfolio-text-holder">
+                                                        <p class="portfolio-desc">Study for FE</p>
+                                                        <p class="portfolio-title">FE</p>
+                                                    </div>
+                                                </a>
                                             </div>
-                                        </a>
+                                            <div id="p-item-2b" class="hover-item nested-grid-item bottom">
+                                                <a class="item-link ajax-portfolio" href="portfolio-2b.html" data-id="2b">
+                                                    <img src="images/ola-finance.jpg" alt="Ola Finance New Project image" />
+                                                    <div class="portfolio-text-holder">
+                                                        <p class="portfolio-desc">Ola Finance</p>
+                                                        <p class="portfolio-title">Ambassadors</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
-
-                                    <div id="p-item-3" class="grid-item element-item p_one_fourth">
-                                        <a class="item-link ajax-portfolio" href="portfolio-3.html" data-id="3" onclick="location.href='portfolio-3.html';"
->
-                                            <img src="images/portfolio_item_03.jpg" alt="" />
+                
+                                    <div id="p-item-3" class="hover-item grid-item element-item p_one_fourth">
+                                        <a class="item-link ajax-portfolio" href="portfolio-3.html" data-id="3">
+                                            <img src="images/beam_logo.jpg" alt="Beam Inc project image" />
                                             <div class="portfolio-text-holder">
                                                 <p class="portfolio-desc">Beam Inc</p>
                                                 <p class="portfolio-title">Digital Marketing</p>
                                             </div>
                                         </a>
                                     </div>
-
-                                    <div id="p-item-4" class="grid-item element-item p_one_fourth">
-                                        <a class="item-link ajax-portfolio" href="portfolio-4.html" data-id="4" onclick="location.href='portfolio-4.html';"
->
-                                            <img src="images/portfolio_item_04.jpg" alt="" />
+                
+                                    <div id="p-item-4" class="hover-item grid-item element-item p_one_fourth">
+                                        <a class="item-link ajax-portfolio" href="portfolio-4.html" data-id="4">
+                                            <img src="images/kickco_logo.jpg" alt="KICKICO project image" />
                                             <div class="portfolio-text-holder">
                                                 <p class="portfolio-desc">KICKICO</p>
                                                 <p class="portfolio-title">Community Engagement</p>
@@ -383,10 +339,10 @@
                                         </a>
                                     </div>
                                 </div>
-                            </div>                           
-                        </div>                        
+                            </div>
+                        </div>
                     </div>
-                </div> 
+                </div>
 
                 <!-- Pricing Section 
                 <div id="pricing" class="section">                   
@@ -538,7 +494,7 @@
                     <div class="section-wrapper block content-1170 center-relative">                                                
                         <div class="content-wrapper">
                             <div class="member member-left">
-                                <img src="images/rohit_profile_img.jpeg" alt="" data-threshold="0 0" data-jarallax-element="60 0">
+                                <img src="images/Rohit_profile_img_copy.jpg" alt="" data-threshold="0 0" data-jarallax-element="60 0">
                                 <div class="member-info">
                                     <p class="member-postition">Founder</p>
                                     <h5 class="member-name">Ro</h5>
@@ -609,7 +565,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <img id="vijay_profile_img" src="images/Vijay_profile_img.jpg" alt="" data-threshold="0 0" data-jarallax-element="60 0" />
+                                <img id="vijay_profile_img" src="images/vijay_profile_img.jpg" alt="" data-threshold="0 0" data-jarallax-element="60 0" />
                             </div>
 
                             <br>
