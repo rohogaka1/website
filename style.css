@@ -1260,6 +1260,7 @@ h1.big-text {
     display: inline-block;
     vertical-align: middle;
     max-width: 700px;
+    width: 500px;
 }
 
 .member-content {
