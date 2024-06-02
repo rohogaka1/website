@@ -964,6 +964,8 @@ h1.big-text {
     max-width: 100%;
     font-size: 0;
     line-height: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .grid-sizer {
@@ -976,6 +978,8 @@ h1.big-text {
     line-height: 0;
     width: 100%;
     overflow: hidden;
+    box-sizing: border-box;
+    padding: 0;
 }
 
 .grid-item.p_one_fourth {
@@ -989,9 +993,43 @@ h1.big-text {
 .grid-item.p_three_fourth {
     width: 75%;
 }
+.grid-item.p_height_three_fourth {
+    height: 75% !important;
+}
+.grid-item.p_height_one_fourth {
+    height: 25% !important;
+}
 
 .grid-item.p_one {
     width: 100%;
+}
+
+/*testing*/
+
+
+.p_one_fourth {
+    flex: 1 1 25%;
+}
+.p_one_half {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Nested grid styles */
+.nested-grid-item {
+    box-sizing: border-box;
+    padding: 0;
+}
+.nested-grid-item.top {
+    flex: 3;
+}
+.nested-grid-item.bottom {
+    flex: 1;
+}
+.nested-grid-item img {
+    width: 100%;
+    height: auto;
 }
 
 .grid-item img {
@@ -1017,6 +1055,28 @@ h1.big-text {
     top: 0;
     opacity: 0;
     transition: opacity .3s ease-in-out;
+}
+
+.nested-grid-item {
+    position: relative; 
+}
+
+.nested-grid-item a.item-link:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+/* Hover effect */
+.nested-grid-item:hover a.item-link:after {
+    opacity: 0.5; /* Adjust the opacity as needed */
 }
 
 .portfolio-text-holder {
@@ -1263,8 +1323,9 @@ h1.big-text {
     width: 500px;
 }
 
-#vijay_profile_img {
-    margin-left: 25px;
+#vijay_profile_img
+{
+    margin-left: 23px;
 }
 
 .member-content {
